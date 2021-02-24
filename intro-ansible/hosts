@@ -3,7 +3,7 @@ ansible_python_interpreter="/usr/bin/env python"
 
 [iosxe:vars]
 # Fill in a unique pod name with no spaces
-user_pod = mypod
+user_pod = michaelspod
 # Fill in a pod number between 10 and 250
 pod_number = 10
 
@@ -11,9 +11,9 @@ pod_number = 10
 # you to fill these in. If you are using the sandbox lab, you may ignore them.
 
 # Fill in your Webex Teams auth token from https://developer.webex.com/getting-started.html
-webex_token = mytokenabcdef
+webex_token = OTgzZjM4N2MtM2I3YS00MjE2LWE3ZGQtYWZmNGY4ZmQ4NmM3ZTI1YTJlYTctNGFm_PF84_1eb65fdf-9643-417f-9974-ad72cae0e10f
 # Fill in your Webex Teams room id you wish to post to
-webex_room_id = roomIDabc123456defghi789jklmnopqr0
+webex_room_id = Y2lzY29zcGFyazovL3VzL1JPT00vMGM1ODFmMjAtNzU0Zi0xMWViLTkxYzQtNGZjOWM5ZDExMWFh
 
 
 [iosxe:children]
@@ -23,7 +23,7 @@ sandbox
 #express
 
 [sandbox]
-ios-xe-mgmt.cisco.com ansible_port=8181
+10.10.20.48 ansible_port=22
 
 [express]
 198.18.134.11  # dcloud pod router #1
